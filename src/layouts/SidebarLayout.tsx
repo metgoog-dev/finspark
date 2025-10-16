@@ -46,9 +46,9 @@ const SidebarLayout: React.FC = () => {
           </div>
         </div>
         <nav className="flex-1 p-4">
-          <NavLink to="/dashboard" className={({isActive})=>`flex items-center gap-3 p-3 rounded-lg mb-1 transition-colors ${isActive ? 'bg-blue-600 text-white' : 'text-slate-400 hover:bg-slate-800 hover:text-white'}`}> <Home className="w-5 h-5"/><span>Dashboard</span> </NavLink>
-          <NavLink to="/customers" className={({isActive})=>`flex items-center gap-3 p-3 rounded-lg mb-1 transition-colors ${isActive ? 'bg-blue-600 text-white' : 'text-slate-400 hover:bg-slate-800 hover:text-white'}`}> <Users className="w-5 h-5"/><span>Customers</span> </NavLink>
-          <NavLink to="/loans" className={({isActive})=>`flex items-center gap-3 p-3 rounded-lg mb-1 transition-colors ${isActive ? 'bg-blue-600 text-white' : 'text-slate-400 hover:bg-slate-800 hover:text-white'}`}> <DollarSign className="w-5 h-5"/><span>Loans</span> </NavLink>
+          <NavLink to="/dashboard" className={({ isActive }: { isActive: boolean }) => `flex items-center gap-3 p-3 rounded-lg mb-1 transition-colors ${isActive ? 'bg-blue-600 text-white' : 'text-slate-400 hover:bg-slate-800 hover:text-white'}`}> <Home className="w-5 h-5"/><span>Dashboard</span> </NavLink>
+          <NavLink to="/customers" className={({ isActive }: { isActive: boolean }) => `flex items-center gap-3 p-3 rounded-lg mb-1 transition-colors ${isActive ? 'bg-blue-600 text-white' : 'text-slate-400 hover:bg-slate-800 hover:text-white'}`}> <Users className="w-5 h-5"/><span>Customers</span> </NavLink>
+          <NavLink to="/loans" className={({ isActive }: { isActive: boolean }) => `flex items-center gap-3 p-3 rounded-lg mb-1 transition-colors ${isActive ? 'bg-blue-600 text-white' : 'text-slate-400 hover:bg-slate-800 hover:text-white'}`}> <DollarSign className="w-5 h-5"/><span>Loans</span> </NavLink>
         </nav>
         <div className="p-4 border-t border-slate-800">
           <button onClick={handleLogout} className="w-full flex items-center gap-2 p-3 rounded-lg hover:bg-slate-800 text-slate-400 hover:text-white transition-colors">

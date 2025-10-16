@@ -1,5 +1,5 @@
 import React from 'react';
-import { Skeleton, SkeletonTable } from './Skeleton';
+import { SkeletonTable } from './Skeleton';
 
 const CustomersSkeleton: React.FC = () => {
   return (
